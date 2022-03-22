@@ -2,8 +2,6 @@
 def make_matrix(row, col):
     return [[*map(int, input().split())] for _ in range(row)]
 
-
-# Ввод данных и Вызов функции
 n, m = map(int, input().split())
 matrix1 = make_matrix(n, m)
 a = input()
@@ -16,3 +14,14 @@ for i in range(n):
         matrix_res[i][j] = matrix1[i][j] + matrix2[i][j]
 
 [print(*r) for r in matrix_res]
+
+
+# Альтернативный вариант решения
+# from numpy import array
+#
+# n, m = map(int, input().split())
+# a = array([input().split() for _ in range(n)], int)
+# input()
+# b = array([input().split() for _ in range(n)], int)
+#
+# [print(*row) for row in a + b]
