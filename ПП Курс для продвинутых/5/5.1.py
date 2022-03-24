@@ -1,2 +1,2 @@
-n = int(input())
-[print(*[abs(i-j) for j in range(n)]) for i in range(n)]
+numbers = (0, 1, 3, 14, 2, 7, 9, 8, 10)
+print(*numbers)
