@@ -1,15 +1,8 @@
 # Набросок покера
 doc = set()
-for i in range(2, 11):
-    doc.add(str(i) + "D")
-    doc.add(str(i) + "H")
-    doc.add(str(i) + "C")
-    doc.add(str(i) + "S")
-for i in ["J", "Q", "K", "A"]:
-    doc.add(str(i) + "D")
-    doc.add(str(i) + "H")
-    doc.add(str(i) + "C")
-    doc.add(str(i) + "S")
+{doc.add(str(i) + j) for i in range(2, 11) for j in "♠♦♥♣"}
+{doc.add(i + j) for i in "JQKA" for j in "♠♦♥♣"}
+
 
 print("1 Player Hand: ", doc.pop(), doc.pop())
 print("2 Player Hand: ", doc.pop(), doc.pop())
