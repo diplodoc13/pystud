@@ -13,5 +13,6 @@ morse = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', 
          '...--', '....-', '.....', '-....', '--...', '---..', '----.']
 d = dict(zip(letters, morse))
 
-text = "Interstellar"
+
+text = input()
 print(eng_to_morze(text))
